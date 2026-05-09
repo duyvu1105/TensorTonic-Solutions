@@ -16,7 +16,7 @@ def f1_micro(y_true, y_pred) -> float:
     
     # --- METHOD 2: The Explicit Calculation ---
     # Calculates global TP, FP, and FN across all classes.
-    classes = np.unique(np.concatenate([y_true, y_pred]))
+    classes = np.unique(np.concatenate((y_true, y_pred)))
     
     total_tp = 0
     total_fp = 0
